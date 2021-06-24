@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="paraSuite">
+  <test thread-count="5" name="parabankTest">
+    <classes>
+      <class name="parabankTestNG.OpenWebpage"/>
+      <class name="parabankTestNG.RegTestNg"/>
+   	  <class name="parabankTestNG.login"/>
+      <class name="parabankTestNG.DataProviderExcel"/>
+      <class name="parabankTestNG.FundsTransfer"/>
+  </classes>
+  </test> <!-- parabankTest -->
+</suite> <!-- paraSuite -->

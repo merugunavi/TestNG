@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite1">
+<parameter name="username" value="nav"/>
+	<parameter name="password" value="123"/>
+  <test thread-count="" name="loginTest">
+    <classes>
+      <class name="ParaBankWebPage.LoginTest"/>
+    </classes>
+  </test> <!-- loginTest -->
+</suite> <!-- Suite1 -->

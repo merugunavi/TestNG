@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [loginftSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="loginftTest(failed)">
+    <parameter name="password" value="123"/>
+    <parameter name="username" value="aaa"/>
+    <classes>
+      <class name="testngLoginFunds.Loginfundstransfer">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="tf" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testngLoginFunds.Loginfundstransfer -->
+    </classes>
+  </test> <!-- loginftTest(failed) -->
+  <test thread-count="5" name="parabankTest(failed)">
+    <classes>
+      <class name="parabankTestNG.FundsTransfer">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="log"/>
+          <include name="tf"/>
+        </methods>
+      </class> <!-- parabankTestNG.FundsTransfer -->
+      <class name="parabankTestNG.DataProviderExcel">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="Login"/>
+        </methods>
+      </class> <!-- parabankTestNG.DataProviderExcel -->
+    </classes>
+  </test> <!-- parabankTest(failed) -->
+</suite> <!-- Failed suite [loginftSuite] -->
